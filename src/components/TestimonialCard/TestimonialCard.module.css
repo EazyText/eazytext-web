@@ -1,0 +1,116 @@
+.container {
+  /* border: 3px solid green; */
+  width: 385px;
+  flex-basis: 385px;
+  height: 460px;
+  border-radius: 60px;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.container:hover > div {
+  display: flex;
+}
+
+.blur {
+  border-radius: 60px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  filter: blur(5px);
+  background-color: var(--grey);
+  opacity: 0.8;
+  border-radius: 60px;
+  transition: all 0.2s ease-in-out;
+}
+
+.container > img {
+  width: 100%;
+  height: 460px;
+  object-fit: contain;
+  border: 2px solid green;
+}
+
+.container > div {
+  display: none;
+}
+
+.container > div:not(.blur) {
+  height: 100%;
+  width: 100%;
+  border-radius: 60px;
+  padding: 60px 30px;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
+
+.container > div > h4 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0%;
+}
+
+.container > div > p:nth-child(2) {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0%;
+  opacity: 0.5;
+}
+
+.container > div > p:last-child {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: var(--white);
+  margin-top: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 70vw;
+    flex-basis: 70vw;
+    border-radius: 40px;
+  }
+
+  .container > div:not(.blur) {
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+    padding: 30px 16px;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .container > div > h4 {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0%;
+  }
+
+  .container > div > p:nth-child(2) {
+    font-size: 28px;
+    line-height: 130%;
+  }
+
+  .container > div > p:last-child {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}

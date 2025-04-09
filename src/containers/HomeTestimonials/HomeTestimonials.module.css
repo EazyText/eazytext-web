@@ -1,0 +1,38 @@
+.container {
+  padding: 90px 100px;
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.testimonials > div {
+  scroll-snap-align: start;
+}
+
+.testimonials::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonials {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+}

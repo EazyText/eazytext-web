@@ -1,0 +1,131 @@
+.container {
+  margin: 60px 100px;
+  background: var(--purple);
+  color: var(--black);
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 80px;
+  border-radius: 80px;
+}
+
+.container > div,
+.container > form {
+  flex: 1;
+}
+
+.container > div > h4 {
+  font-weight: 400;
+  font-size: var(--h2FontLg);
+  line-height: var(--h2LineHeightLg);
+  letter-spacing: 0%;
+  margin-bottom: 2rem;
+}
+
+.container > div > h4 > span {
+  color: #06050f66;
+  display: block;
+}
+
+.container > div > p {
+  font-weight: 500;
+  font-size: var(--pFontLg);
+  line-height: var(--pLineHeightLg);
+  letter-spacing: 0%;
+  margin-bottom: 2rem;
+}
+
+.container > form > div {
+  margin-bottom: 1rem;
+}
+
+.container > form > div > label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.container > form > div > span > input {
+  border: 2px solid var(--grey);
+  background-color: transparent;
+  height: 65px;
+  box-shadow: none;
+  font-size: 18px;
+  color: var(--black);
+}
+
+.container > form > button {
+  width: 100%;
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.container > form > p:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  margin-top: 30px;
+  color: #06050f66;
+}
+
+.container > form > p:last-child > a {
+  color: var(--black);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    margin: 20px;
+    gap: 30px;
+    padding: 16px;
+    border-radius: 30px;
+    flex-direction: column;
+  }
+
+  .container > div,
+  .container > form {
+    flex: 1;
+    width: 100%;
+  }
+
+  .container > div > h4 {
+    margin-bottom: 1rem;
+  }
+
+  .container > div > p {
+    margin-bottom: 1rem;
+  }
+
+  .container > form > div > span > input {
+    height: 45px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    margin: 20px;
+    gap: 30px;
+    padding: 16px;
+    border-radius: 30px;
+    flex-direction: column;
+  }
+
+  .container > div,
+  .container > form {
+    flex: 1;
+    width: 100%;
+  }
+
+  .container > div > h4 {
+    margin-bottom: 1rem;
+  }
+
+  .container > div > p {
+    margin-bottom: 1rem;
+  }
+
+  .container > form > div > span > input {
+    height: 45px;
+    border-radius: 10px;
+  }
+}

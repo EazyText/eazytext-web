@@ -1,0 +1,162 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container > label {
+  color: var(--white);
+  font-family: "Bricolage Grotesque";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.container > span:nth-child(2) {
+  color: var(--red);
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.input {
+  position: relative;
+  display: block;
+}
+
+.input > span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.input > input {
+  display: block;
+  width: 100%;
+  padding: 11px 16px;
+  font-family: "Bricolage Grotesque";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 7%;
+  text-align: center;
+  text-align: left;
+  border-radius: 8px;
+  animation: appear 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  outline: 1px solid transparent;
+  background: var(--black3);
+  box-shadow: 0px 1px 4px 0px #26282e5e;
+  backdrop-filter: blur(4px);
+}
+
+.input input:focus {
+  outline: 1px solid var(--purple);
+}
+
+.valid {
+  border: 1px solid var(--black3);
+  color: var(--white);
+}
+
+.invalid {
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.input > input::placeholder {
+  color: var(--grey);
+  font-family: "Bricolage Grotesque";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.errorMessage {
+  color: var(--red);
+  font-family: "Bricolage Grotesque";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 7%;
+  text-align: center;
+  animation: appear 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.tip {
+  color: var(--grey);
+  font-family: "Bricolage Grotesque";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.input > span > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .input > input {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 23px;
+    border-radius: 64px;
+  }
+
+  .container > label {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .errorMessage {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .input > span {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 1023px) {
+  .input > input {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 23px;
+    border-radius: 64px;
+  }
+
+  .container > label {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .errorMessage {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .input > span {
+    right: 10px;
+  }
+}

@@ -1,0 +1,72 @@
+.container {
+  padding: 20px 100px;
+  display: flex;
+  align-items: stretch;
+}
+
+.container > div {
+  padding-inline: 40px;
+  border-left: 1px solid #ffffff26;
+}
+
+.container > div:nth-child(1),
+.container > div:nth-child(2) {
+  flex-basis: 20%;
+}
+
+.container > div:last-child {
+  flex: 1;
+}
+
+.container > div > h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+
+.container > div:not(.container > div:last-child) > a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container > div > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #ffffff80;
+  margin-bottom: 1rem;
+}
+
+.container > div > p > a {
+  color: var(--white);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container > div {
+    padding-inline: 0px;
+    border-left: none;
+  }
+
+  .container > div:nth-child(1),
+  .container > div:nth-child(2) {
+    flex-basis: 100%;
+  }
+
+  .container > div:last-child {
+    flex: 1;
+  }
+}

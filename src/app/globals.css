@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  background-color: var(--black);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--white);
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --black: #0b0c0d;
+  --black2: #17191c;
+  --black3: #37393c;
+  --white: #fff;
+  --purple: #cd96fc;
+  --grey: #898a8c;
+  --h2FontLg: 50px;
+  --h2LineHeightLg: 60px;
+  --h2MarginBottom: 2rem;
+  --pFontLg: 16px;
+  --pLineHeightLg: 26px;
+  --pMarginBottom: 1rem;
+  --green: #51d764;
+}
+
+.h2 {
+  font-weight: 400;
+  font-size: var(--h2FontLg);
+  line-height: var(--h2LineHeightLg);
+  letter-spacing: 0%;
+  margin-bottom: 2rem;
+}
+
+.p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+
+@media screen and (max-width: 767px) {
+  .h2 {
+    font-size: 32px;
+    line-height: 130%;
+    margin-bottom: 1rem;
+  }
+
+  .p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  :root {
+    --h2FontLg: 40px;
+    --h2LineHeightLg: 130%;
+    --h2MarginBottom: 1rem;
+    --pFontLg: 14px;
+    --pLineHeightLg: 150%;
+    --pMarginBottom: 1rem;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+/* @media screen and (max-width: 767px)  */
+
+/* @media screen and (min-width: 767px) and (max-width: 1023px)  */

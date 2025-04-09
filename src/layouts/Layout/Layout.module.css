@@ -1,0 +1,28 @@
+.container {
+  min-height: 100svh;
+}
+
+.container > header {
+  border: 1px solid #37393c;
+  margin: auto;
+  width: 1008px;
+  position: fixed;
+  top: 12px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  background-color: var(--black2);
+  z-index: 20;
+}
+
+@media screen and (max-width: 767px) {
+  .container > header {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container > header {
+    width: 95%;
+  }
+}

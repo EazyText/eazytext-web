@@ -1,0 +1,102 @@
+.container {
+  padding: 16px 24px;
+  border-radius: calc(infinity * 1px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container > h4 {
+  cursor: pointer;
+}
+
+.container > nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--white);
+}
+
+.container > nav > a {
+  transition: all 0.2s ease-in-out;
+}
+
+.container > nav > a:hover {
+  color: var(--purple);
+}
+
+.active {
+  color: var(--purple);
+}
+
+.inActive {
+  color: var(--white);
+}
+
+.container > svg:nth-child(4) {
+  display: none;
+  margin-left: auto;
+}
+
+.sidenav {
+  height: 100svh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--green);
+  overflow: hidden;
+  width: 0%;
+  transition: all 0.2s ease-in-out;
+}
+
+.hidden {
+  transform: translateY(-120%);
+}
+
+.visible {
+  transform: none;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 16px;
+  }
+
+  .container > h4 {
+    font-size: 18px;
+  }
+
+  .container > nav,
+  .container > button {
+    display: none;
+  }
+
+  .container > svg:nth-child(4) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 16px;
+  }
+
+  .container > h4 {
+    font-size: 18px;
+  }
+
+  .container > nav,
+  .container > button {
+    display: none;
+  }
+
+  .container > svg:nth-child(4) {
+    display: block;
+  }
+}

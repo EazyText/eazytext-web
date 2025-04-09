@@ -1,0 +1,164 @@
+.outerContainer {
+  border-radius: 32px;
+  padding: 2px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.active {
+  background: linear-gradient(
+    278.85deg,
+    #cda5d5 3.36%,
+    #fbe4ff 48.72%,
+    #e8fe74 99.06%
+  );
+}
+
+.inActive {
+  background: #ffffff4d;
+}
+
+.container {
+  padding: 25px 30px;
+  border-radius: 30px;
+  background-color: var(--black);
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.question > h4 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0%;
+  color: var(--white);
+}
+
+.question > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--purple);
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.question > div:hover {
+  background-color: #cc96fc65;
+}
+
+.answer {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: var(--purple);
+}
+
+.openClose {
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .outerContainer {
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 16px;
+    border-radius: 18px;
+    background-color: var(--black);
+  }
+
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .question > h4 {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .question > div {
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+
+  .answer {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .cta {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .outerContainer {
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 16px;
+    border-radius: 18px;
+    background-color: var(--black);
+  }
+
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .question > h4 {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .question > div {
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+
+  .answer {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .cta {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}

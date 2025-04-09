@@ -1,0 +1,33 @@
+.container {
+  padding: 120px 100px 60px 100px;
+  background-image: url("../../assets//Images/legalHeroBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container > h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--white);
+}
+
+.container > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  display: none;
+}
+
+.container > button {
+  max-width: 200px;
+  margin-inline: auto;
+}

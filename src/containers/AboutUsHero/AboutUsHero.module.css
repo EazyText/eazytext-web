@@ -1,0 +1,95 @@
+.container {
+  min-height: 100svh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.textSection {
+  padding: 114px 100px 55px 100px;
+}
+
+.textSection > h1 {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  max-width: 80%;
+  margin-bottom: 32px;
+}
+
+.textSection > h1 > span {
+  display: inline-block;
+  border-bottom: 2px solid var(--green);
+}
+
+.textSection > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 7%;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 8px;
+  max-width: 70%;
+  margin-bottom: 24px;
+}
+
+.container > img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+@media screen and (max-width: 767px) {
+  .textSection {
+    padding: 94px 20px 20px 20px;
+  }
+
+  .textSection > h1 {
+    font-size: 55px;
+    line-height: 120%;
+    max-width: 80%;
+    margin-bottom: 32px;
+  }
+
+  .textSection > p {
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 90%;
+    margin-bottom: 16px;
+  }
+
+  .container > img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 400px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .textSection {
+    padding: 94px 20px 20px 20px;
+  }
+
+  .textSection > h1 {
+    font-size: 55px;
+    line-height: 120%;
+    max-width: 80%;
+    margin-bottom: 32px;
+  }
+
+  .textSection > p {
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 90%;
+    margin-bottom: 16px;
+  }
+
+  .container > img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 400px;
+  }
+}
