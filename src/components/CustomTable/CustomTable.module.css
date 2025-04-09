@@ -110,10 +110,6 @@
   border-bottom: 1px solid var(--purple);
 }
 
-.options > span:hover {
-  background-color: var(--purple);
-}
-
 .paragraph {
   text-align: center;
   font-size: 16px;
@@ -179,10 +175,6 @@
     ) {
     display: none;
     padding: 0rem;
-  }
-
-  .tableBodyContainer:hover {
-    background-color: var(--purple);
   }
 
   .options {

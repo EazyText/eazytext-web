@@ -2,7 +2,6 @@
 
 import ArrowDown from "@/assets/svgIcons/ArrowDown";
 import { capitalize, structureWords } from "@/helpers/capitalize";
-import { TABLE_LENGTH } from "@/utilities/constants";
 import { LinearProgress } from "@mui/material";
 import Link from "next/link";
 import React, {
@@ -173,7 +172,7 @@ const CustomTable: React.FC<CustomTableProps> = ({
                       className={classes.button}
                     >
                       <span>Options</span>
-                      <ArrowDown dimensions="16px" />
+                      <ArrowDown />
 
                       {activeRow === rowIndex && options.length > 0 && (
                         <div className={classes.options} ref={optionsRef}>
@@ -249,7 +248,7 @@ const CustomTable: React.FC<CustomTableProps> = ({
                       className={classes.button}
                     >
                       <span>Options</span>
-                      <ArrowDown dimensions="16px" />
+                      <ArrowDown />
 
                       {activeRow === rowIndex && options.length > 0 && (
                         <div className={classes.options} ref={optionsRef}>

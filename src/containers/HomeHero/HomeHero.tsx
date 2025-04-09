@@ -13,14 +13,10 @@ import Image from "next/image";
 import { useContext } from "react";
 import { AuthContext } from "@/context/AuthContext";
 import { inputChangeHandler } from "@/helpers/inputChangeHandler";
-import useUpdateSearchParams from "@/hooks/useUpdateSearchParams";
 
 const HomeHero = () => {
   // Context
   const { setAuthData, authData } = useContext(AuthContext);
-
-  // Hooks
-  const { updateSearchParams } = useUpdateSearchParams();
 
   return (
     <section className={classes.container}>
@@ -43,14 +39,7 @@ const HomeHero = () => {
               inputChangeHandler(e, setAuthData);
             }}
           />
-          <Button
-            type="secondary"
-            onClick={() => {
-              if (authData?.email) updateSearchParams("auth", "sign-up", "set");
-            }}
-          >
-            Join Us
-          </Button>
+          <Button type="secondary">Join Us</Button>
         </div>
         <p>
           We care about your data in our{" "}

@@ -2,7 +2,6 @@
 
 import Menu from "@/assets/svgIcons/Menu";
 import Button from "@/components/Button/Button";
-import useUpdateSearchParams from "@/hooks/useUpdateSearchParams";
 import { headerRoutes } from "@/utilities/routes";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -14,9 +13,6 @@ const Header = () => {
   // Router
   const pathname = usePathname();
   const router = useRouter();
-
-  // Hooks
-  const { updateSearchParams } = useUpdateSearchParams();
 
   // Refs
   const sideNavRef = useRef<HTMLDivElement | null>(null);
@@ -79,9 +75,7 @@ const Header = () => {
         })}
       </nav>
 
-      <Button onClick={() => updateSearchParams("auth", "sign-up", "set")}>
-        Sign Up
-      </Button>
+      <Button>Sign Up</Button>
 
       <Menu onClick={handleSidenavOpen} />
 

@@ -1,8 +1,13 @@
+import Loader from "@/components/Loader/Loader";
 import PlanAndPricing from "@/containers/PlanAndPricing/PlanAndPricing";
-import React from "react";
+import React, { Suspense } from "react";
 
 const page = () => {
-  return <PlanAndPricing />;
+  return (
+    <Suspense fallback={<Loader />}>
+      <PlanAndPricing />
+    </Suspense>
+  );
 };
 
 export default page;

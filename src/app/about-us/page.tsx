@@ -1,9 +1,10 @@
+import Loader from "@/components/Loader/Loader";
 import AboutUs from "@/containers/AboutUs/AboutUs";
 import React, { Suspense } from "react";
 
 const page = () => {
   return (
-    <Suspense>
+    <Suspense fallback={<Loader />}>
       <AboutUs />
     </Suspense>
   );
