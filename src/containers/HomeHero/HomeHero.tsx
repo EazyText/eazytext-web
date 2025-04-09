@@ -6,7 +6,7 @@ import classes from "./HomeHero.module.css";
 import { ROUTES } from "../../utilities/routes";
 import Input from "@/components/Input/Input";
 import bg2 from "../../assets/Images/heroSectionBg2.svg";
-import bg3 from "../../assets/Images/heroSectionBg3.svg";
+import bg3 from "../../assets/Images/heroSectionbg3.svg";
 import glassBall from "../../assets/Images/glassBall.svg";
 
 import Image from "next/image";
